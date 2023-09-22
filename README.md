@@ -9,6 +9,10 @@ Desenvolvemos um mecanismo para adicionar novos elementos à árvore, garantindo
 
 ![image](https://github.com/felipesphair/Arvore-Binaria/assets/107360437/9ab4a9ac-cdb0-4f8a-9af9-cbb08f1d8f23)
 
+
+<p align="center">
+  <img src="[https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image](https://github.com/felipesphair/Arvore-Binaria/assets/107360437/9ab4a9ac-cdb0-4f8a-9af9-cbb08f1d8f23)"/>
+</p>
 2. Remoção de Números:
 Implementamos um método para remover números da árvore, assegurando que a estrutura continue sendo uma árvore binária de busca válida após a operação.
 
