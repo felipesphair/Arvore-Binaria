@@ -43,3 +43,16 @@ ARQUIVOS
 
 
 # Exemplo de funcionamento:
+1. Inserção de Novos Números:
+   
+   
+2. Remoção de Números:
+   
+   
+3. Busca de Elementos:
+   
+   
+4. Impressão da Árvore:
+
+
+
