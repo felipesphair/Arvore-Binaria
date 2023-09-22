@@ -7,26 +7,30 @@ No trabalho implementamos uma árvore binária de busca, que é uma estrutura de
 1. Inserção de Novos Números:
 Desenvolvemos um mecanismo para adicionar novos elementos à árvore, garantindo que a estrutura da árvore seja mantida de acordo com as propriedades de uma árvore binária de busca.
 
-![image](https://github.com/felipesphair/Arvore-Binaria/assets/107360437/9ab4a9ac-cdb0-4f8a-9af9-cbb08f1d8f23)
-
-
-<p align="center">
-  <img src="[https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image](https://github.com/felipesphair/Arvore-Binaria/assets/107360437/9ab4a9ac-cdb0-4f8a-9af9-cbb08f1d8f23)"/>
+<p align="center" width="100%">
+  <img width="33%" src="https://user-images.githubusercontent.com/107360437/270015946-9ab4a9ac-cdb0-4f8a-9af9-cbb08f1d8f23.png">
 </p>
-2. Remoção de Números:
-Implementamos um método para remover números da árvore, assegurando que a estrutura continue sendo uma árvore binária de busca válida após a operação.
 
-![image](https://github.com/felipesphair/Arvore-Binaria/assets/107360437/143ef007-a91f-4a26-afaa-82ee0bdbd616)
+2. Remoção de Números:
+ Implementamos um método para remover números da árvore, assegurando que a estrutura continue sendo uma árvore binária de busca válida após a operação.
+
+<p align="center" width="100%">
+  <img width="33%" src="https://user-images.githubusercontent.com/107360437/270015296-143ef007-a91f-4a26-afaa-82ee0bdbd616.png">
+</p>
 
 3. Busca de Elementos:
 Criamos um algoritmo eficiente de busca, permitindo localizar elementos específicos na árvore com rapidez.
 
-![image](https://github.com/felipesphair/Arvore-Binaria/assets/107360437/f9a9af66-c900-4f47-90fe-13f1e843d9c3)
+<p align="center" width="100%">
+  <img width="33%" src="https://user-images.githubusercontent.com/107360437/270016118-f9a9af66-c900-4f47-90fe-13f1e843d9c3.png">
+</p>
 
 4. Impressão da Árvore:
 Desenvolvemos uma função para imprimir a estrutura da árvore, facilitando a visualização e compreensão de sua organização.
 
-![image](https://github.com/felipesphair/Arvore-Binaria/assets/107360437/e0180ddf-b16f-4942-860c-c6756f44f95d)
+<p align="center" width="100%">
+  <img width="33%" src="https://user-images.githubusercontent.com/107360437/270016163-e0180ddf-b16f-4942-860c-c6756f44f95d.png">
+</p>
 
 
 # Como funciona o código:
