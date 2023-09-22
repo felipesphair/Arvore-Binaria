@@ -1,7 +1,9 @@
 # Árvore-Binária: 
 No trabalho implementamos uma árvore binária de busca, que é uma estrutura de dados em que cada nó possui, no máximo, dois filhos, e a subárvore à esquerda contém valores menores que o nó, enquanto a subárvore à direita contém valores maiores, facilitando a busca eficiente de elementos.
-![image](https://github.com/felipesphair/Arvore-Binaria/assets/107360437/6fdc3c3b-d550-4080-ad00-12d3cb7a2619)
 
+<p align="center" width="100%">
+  <img width="33%" src="https://user-images.githubusercontent.com/107360437/270016163-e0180ddf-b16f-4942-860c-c6756f44f95d.png">
+</p>
 # No projeto que realizamos sobre árvores binárias de busca, abordamos as seguintes funcionalidades:
 
 1. Inserção de Novos Números:
