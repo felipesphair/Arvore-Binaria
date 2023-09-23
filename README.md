@@ -41,19 +41,20 @@ Desenvolvemos uma função para imprimir a estrutura da árvore, facilitando a v
 1. Inserção de Novos Números(ARQUIVO):
    Modo em recursividade
    
+
 2. Remoção de Números(ARQUIVO):
-   São 3 situações de exclusão sendo, se há nenhum filho, se há 1 filho e se há 2 filhos.
+  São 3 situações de exclusão sendo, se há nenhum filho, se há 1 filho e se há 2 filhos.
    
   1.	Exclusão quando não há filhos:
 	  •	Nesse caso, basta remover o nó da árvore. Não há filhos para se preocupar, então a exclusão é direta. O nó simplesmente é removido da árvore.
-
-	2.	Exclusão quando há um filho:
+  
+  2.	Exclusão quando há um filho:
 	  •	Se o nó a ser excluído tem apenas um filho, o procedimento é um pouco mais complexo.
 	  •	O nó a ser excluído é substituído pelo seu único filho.
 	  •	A árvore ainda mantém a propriedade de árvore binária de busca, pois todos os elementos na subárvore esquerda (se existir) são menores que o nó pai, e todos os elementos na subárvore direita (se existir) são maiores.
 	  •	O nó original é removido.
 
-	3.	Exclusão quando há dois filhos:
+  3.	Exclusão quando há dois filhos:
 	  •	Este é o caso mais complexo.
 	  •	Primeiro, encontra-se o nó sucessor do nó a ser excluído. O sucessor é o menor elemento na subárvore direita do nó a ser excluído. Isso garante que o sucessor seja maior que todos os elementos na subárvore esquerda e menor que todos os elementos na subárvore direita do nó a ser excluído.
 	  •	O valor do nó sucessor substitui o valor do nó a ser excluído.
