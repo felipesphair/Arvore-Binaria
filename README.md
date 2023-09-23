@@ -39,7 +39,8 @@ Desenvolvemos uma função para imprimir a estrutura da árvore, facilitando a v
 # Como funciona o código:
 
 # 1. Inserção de Novos Números(Tree.java):
-   Modo em recursividade
+
+O método insert em uma árvore binária verifica se o nó atual (place) é nulo, o que indicaria que é um ponto de inserção. Se for o caso, ele cria um novo nó com o valor a ser inserido. Caso contrário, compara o valor a ser inserido com o valor do nó atual e decide se deve percorrer a subárvore esquerda ou direita. Isso é feito de forma recursiva até encontrar um ponto de inserção vazio, onde o novo nó é adicionado. No final do processo, a árvore é modificada para incluir o novo nó no local apropriado.
 
 <p align="center" width="100%">
   <img width="33%" src="https://cdn.discordapp.com/attachments/718425842409144351/1155255497780379699/image.png">
@@ -72,13 +73,17 @@ Desenvolvemos uma função para imprimir a estrutura da árvore, facilitando a v
 </p>
 
 # 3. Busca de Elementos(Tree.java):
+
+A função search encaminha a busca para a função privada searchNode, passando o nó raiz e o valor a ser procurado como argumentos. A função searchNode verifica se o nó atual é nulo, retornando false caso seja o caso, indicando que o valor não foi encontrado. Se o valor do nó atual for igual ao valor procurado, a função retorna true. Caso o valor procurado seja menor que o valor do nó atual, a busca é encaminhada para a subárvore esquerda. Por fim, se o valor procurado é maior ou igual, a busca é direcionada para a subárvore direita. Esse processo ocorre de forma recursiva, até que o valor desejado seja encontrado ou determinado como ausente na árvore.
        
 <p align="center" width="100%">
   <img width="33%" src="https://cdn.discordapp.com/attachments/718425842409144351/1155256570704306217/image.png">
 </p>   
 
 # 4. Impressão da Árvore(Tree.java):
-   
+
+Ele finaliza o Scanner aberto e imprime a árvore atual, após isso ele finaliza o programa.
+
 <p align="center" width="100%">
   <img width="33%" src="https://cdn.discordapp.com/attachments/718425842409144351/1155256748588937286/image.png">
 </p>   
