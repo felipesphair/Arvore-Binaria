@@ -4,6 +4,7 @@ No trabalho implementamos uma árvore binária de busca, que é uma estrutura de
 <p align="center" width="100%">
   <img width="33%" src="https://user-images.githubusercontent.com/107360437/270016163-e0180ddf-b16f-4942-860c-c6756f44f95d.png">
 </p>
+
 # No projeto que realizamos sobre árvores binárias de busca, abordamos as seguintes funcionalidades:
 
 1. Inserção de Novos Números:
