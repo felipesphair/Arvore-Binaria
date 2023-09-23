@@ -1,6 +1,7 @@
-import java.util.Random;
+import java.util.Scanner;
 
-public class Main{
+
+public class Main {
 
     public static void showTrunks(Trunk p) {
         if (p == null) {
@@ -43,22 +44,60 @@ public class Main{
     }
 
     public static void main(String[] args) {
-        Random rand = new Random();
+        Scanner scanner = new Scanner(System.in);
+
         Tree tree = new Tree();
 
-        // Inserir 10 números inteiros aleatórios na árvore
-        for (int i = 0; i < 10; i++) {
-            int randomNumber = rand.nextInt(100);
-            insertRandomNumber(tree, randomNumber);
-        }
+        while (true) {
+            System.out.println("\nMenu:");
+            System.out.println("1. Inserir elemento");
+            System.out.println("2. Procurar elemento");
+            System.out.println("3. Remover elemento");
+            System.out.println("4. Finalizar");
+            System.out.print("Escolha uma opção: ");
 
-        // Exibir a árvore binária
-        System.out.println("ÁRVORE BINÁRIA:");
-        printBinaryTree(tree);
+            int option = scanner.nextInt();
+
+            switch (option) {
+                case 1:
+                    System.out.print("Digite o número a ser inserido: ");
+                    int number = scanner.nextInt();
+                    insertRandomNumber(tree, number);
+                    break;
+                case 2:
+                    System.out.print("Digite o número a ser procurado: ");
+                    int searchNumber = scanner.nextInt();
+                    boolean found = tree.search(searchNumber);
+                    System.out.println("O número " + searchNumber + (found ? " foi encontrado" : " não foi encontrado"));
+                    break;
+                case 3:
+                    System.out.print("Digite o número a ser removido: ");
+                    int removeNumber = scanner.nextInt();
+                    tree.remove(removeNumber);
+                    System.out.println("O número " + removeNumber + " foi removido");
+                    break;
+                case 4:
+                    scanner.close();
+                    System.out.println();
+                    System.out.println();
+                    System.out.println();
+                    printBinaryTree(tree);
+                    return;
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
+                    break;
+            }
+
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            printBinaryTree(tree);
+        }
+    
     }
 
     public static void insertRandomNumber(Tree tree, int number) {
-        System.out.print("Inserindo: " + number);
+        System.out.print("Inserindo: ");
         tree.insert(number, tree.root);
         System.out.println();
     }
