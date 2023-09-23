@@ -40,6 +40,10 @@ Desenvolvemos uma função para imprimir a estrutura da árvore, facilitando a v
 
 # 1. Inserção de Novos Números(Tree.java):
    Modo em recursividade
+
+<p align="center" width="100%">
+  <img width="33%" src="https://cdn.discordapp.com/attachments/718425842409144351/1155255497780379699/image.png">
+</p>
    
 
 # 2. Remoção de Números(Tree.java):
@@ -61,12 +65,23 @@ Desenvolvemos uma função para imprimir a estrutura da árvore, facilitando a v
 		  •	O valor do nó sucessor substitui o valor do nó a ser excluído.
 		  •	Agora, o problema se reduz a excluir o nó sucessor, que pode ser tratado como um dos dois primeiros casos.
 
+
+    
+<p align="center" width="100%">
+  <img width="33%" src="https://cdn.discordapp.com/attachments/718425842409144351/1155256338960629810/image.png">
+</p>
+
 # 3. Busca de Elementos(Tree.java):
-   
-   
+       
+<p align="center" width="100%">
+  <img width="33%" src="https://cdn.discordapp.com/attachments/718425842409144351/1155256570704306217/image.png">
+</p>   
+
 # 4. Impressão da Árvore(Tree.java):
    
-
+<p align="center" width="100%">
+  <img width="33%" src="https://cdn.discordapp.com/attachments/718425842409144351/1155256748588937286/image.png">
+</p>   
 
 # Demais Arquivos
 
