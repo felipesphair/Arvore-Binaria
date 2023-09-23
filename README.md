@@ -51,23 +51,22 @@ O método insert em uma árvore binária verifica se o nó atual (place) é nulo
 
   São 3 situações de exclusão sendo, se há nenhum filho, se há 1 filho e se há 2 filhos.
    
-	  1.	Exclusão quando não há filhos:
-		  •	Nesse caso, basta remover o nó da árvore. Não há filhos para se preocupar, então a exclusão é direta. O nó simplesmente é removido da árvore.
-	  
-	  2.	Exclusão quando há um filho:
-		  •	Se o nó a ser excluído tem apenas um filho, o procedimento é um pouco mais complexo.
-		  •	O nó a ser excluído é substituído pelo seu único filho.
-		  •	A árvore ainda mantém a propriedade de árvore binária de busca, pois todos os elementos na subárvore esquerda (se existir) são menores que o nó pai, e todos os elementos na subárvore direita (se existir) são maiores.
-		  •	O nó original é removido.
+	  1. Cenário: Nó sem Filhos:
 	
-	  3.	Exclusão quando há dois filhos:
-		  •	Este é o caso mais complexo.
-		  •	Primeiro, encontra-se o nó sucessor do nó a ser excluído. O sucessor é o menor elemento na subárvore direita do nó a ser excluído. Isso garante que o sucessor seja maior que todos os elementos na subárvore esquerda e menor que todos os elementos na subárvore direita do nó a ser excluído.
-		  •	O valor do nó sucessor substitui o valor do nó a ser excluído.
-		  •	Agora, o problema se reduz a excluir o nó sucessor, que pode ser tratado como um dos dois primeiros casos.
+	  Caso o nó a ser removido não tenha filhos (current.left == null && current.right == null), ou seja, seja uma folha, a função removeNode retorna null, indicando que esse nó deve ser eliminado.
+	
+	  2. Cenário: Nó com Apenas um Filho
+	
+	  Se o nó a ser removido possui apenas um filho (seja à esquerda ou à direita), a função verifica qual lado está presente (current.left == null ou current.right == null) e retorna o filho não nulo. Isso faz com que o nó a ser removido seja 
+          substituído pelo seu único filho, mantendo a estrutura da árvore correta.
+	
+	  3. Cenário: Nó com Dois Filhos
+	
+	  No caso mais complexo, em que o nó a ser removido possui dois filhos, a função procura o menor valor na subárvore direita (utilizando a função findSmallestValue). Esse menor valor substitui o valor do nó a ser removido, e em seguida, o mesmo 
+	  procedimento é aplicado para remover o nó que continha o valor menor da subárvore direita.
 
-
-    
+A função remove simplesmente chama a função privada removeNode com a raiz da árvore e o valor a ser removido como argumentos. removeNode é recursiva, percorrendo a árvore até encontrar o nó a ser removido ou chegar a um ponto onde o nó é nulo, indicando que o valor não está presente na árvore. Ao final do processo, a raiz da árvore é atualizada com o resultado da exclusão. O método findSmallestValue auxilia na identificação do menor valor na subárvore direita, essencial para a exclusão de nós com dois filhos. Essa implementação garante a integridade da estrutura da árvore após as operações de exclusão.
+  
 <p align="center" width="100%">
   <img width="33%" src="https://cdn.discordapp.com/attachments/718425842409144351/1155256338960629810/image.png">
 </p>
