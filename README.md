@@ -38,11 +38,12 @@ Desenvolvemos uma função para imprimir a estrutura da árvore, facilitando a v
 
 # Como funciona o código:
 
-1. Inserção de Novos Números(ARQUIVO):
+# 1. Inserção de Novos Números(ARQUIVO):
    Modo em recursividade
    
 
-2. Remoção de Números(ARQUIVO):
+# 2. Remoção de Números(ARQUIVO):
+
   São 3 situações de exclusão sendo, se há nenhum filho, se há 1 filho e se há 2 filhos.
    
   1.	Exclusão quando não há filhos:
