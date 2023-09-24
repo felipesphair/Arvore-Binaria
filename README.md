@@ -79,7 +79,7 @@ A função search encaminha a busca para a função privada searchNode, passando
   <img width="33%" src="https://cdn.discordapp.com/attachments/718425842409144351/1155256570704306217/image.png">
 </p>   
 
-# 4. Impressão da Árvore(Tree.java):
+# 4. Impressão da Árvore(Main.java):
 
 Ele finaliza o Scanner aberto e imprime a árvore atual, após isso ele finaliza o programa.
 
